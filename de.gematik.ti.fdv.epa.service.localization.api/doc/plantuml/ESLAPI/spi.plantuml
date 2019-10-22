@@ -1,0 +1,23 @@
+@startuml
+
+
+
+  package de.gematik.ti.fdv.epa.service.localization.spi {
+    interface IServiceLocalizer {
+        {abstract} + lookup()
+        {abstract} + endpointURLForInterface()
+        {abstract} + getLookupStatus()
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+@enduml

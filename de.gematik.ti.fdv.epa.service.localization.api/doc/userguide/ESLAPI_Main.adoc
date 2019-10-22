@@ -1,0 +1,5 @@
+include::config.adoc[]
+== ePA Service Localization API
+include::ESLAPI_Introduction.adoc[]
+include::ESLAPI_Structure.adoc[]
+include::ESLAPI_GettingStarted.adoc[]

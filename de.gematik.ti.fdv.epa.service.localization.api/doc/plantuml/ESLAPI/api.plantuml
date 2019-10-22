@@ -1,0 +1,41 @@
+@startuml
+
+
+
+  package de.gematik.ti.fdv.epa.service.localization.api {
+    enum LookupStatus {
+      IN_PROGRESS
+      SUCCESS
+      ERROR
+    }
+  }
+  
+
+  package de.gematik.ti.fdv.epa.service.localization.api {
+    enum ServiceInterfaceName {
+      IAuthenticationInsurant
+      IAuthorizationInsurant
+      IAuthorizationManagementInsurant
+      IAccountManagementInsurant
+      IDocumentManagementConnect
+      IDocumentManagementInsurant
+      IOCSPStatusInformation
+      IProxyDirectoryQuery
+      IGetKeySgd1
+      IGetKeySgd2
+      serviceLocatorName
+      moduleName
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+@enduml
