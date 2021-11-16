@@ -88,3 +88,9 @@ settings.properties
 
 
 **/src/test/**/*.plantuml
+
+githubPublish.jenkinsfile
+release.jenkinsfile
+githubBuild.jenkinsfile
+ciExtern.jenkinsfile
+ci.jenkinsfile

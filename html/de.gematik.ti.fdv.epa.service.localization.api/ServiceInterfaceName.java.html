@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ServiceInterfaceName.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">epa.service.localization.api</a> &gt; <a href="index.source.html" class="el_package">de.gematik.ti.fdv.epa.service.localization.api</a> &gt; <span class="el_source">ServiceInterfaceName.java</span></div><h1>ServiceInterfaceName.java</h1><pre class="source lang-java linenums">/*
+ * Copyright (c) 2021 gematik GmbH
+ * 
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an 'AS IS' BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package de.gematik.ti.fdv.epa.service.localization.api;
+
+/**
+ * include::{userguide}/ESLAPI_Structure.adoc[tag=IServiceLocalizer]
+ *
+ */
+<span class="fc" id="L11">public enum ServiceInterfaceName {</span>
+<span class="fc" id="L12">    IAuthenticationInsurant(&quot;I_Authentication_Insurant&quot;, &quot;authn&quot;),</span>
+<span class="fc" id="L13">    IAuthorizationInsurant(&quot;I_Authorization_Insurant&quot;, &quot;authz&quot;),</span>
+<span class="fc" id="L14">    IAuthorizationManagementInsurant(&quot;I_Authorization_Management_Insurant&quot;, &quot;authz&quot;),</span>
+<span class="fc" id="L15">    IAccountManagementInsurant(&quot;I_Account_Management_Insurant&quot;, &quot;docv&quot;),</span>
+<span class="fc" id="L16">    IDocumentManagementConnect(&quot;I_Document_Management_Connect&quot;, &quot;docv&quot;),</span>
+<span class="fc" id="L17">    IDocumentManagementInsurant(&quot;I_Document_Management_Insurant&quot;, &quot;docv&quot;),</span>
+<span class="fc" id="L18">    IOCSPStatusInformation(&quot;I_OCSP_Status_Information&quot;, &quot;ocspf&quot;),</span>
+<span class="fc" id="L19">    IProxyDirectoryQuery(&quot;I_Proxy_Directory_Query&quot;, &quot;avzd&quot;),</span>
+<span class="fc" id="L20">    IGetKeySgd1(&quot;&quot;, &quot;sgd1&quot;),</span>
+<span class="fc" id="L21">    IGetKeySgd2(&quot;&quot;, &quot;sgd2&quot;);</span>
+
+    private final String serviceLocatorName;
+    private final String moduleName;
+
+<span class="fc" id="L26">    ServiceInterfaceName(final String serviceLocatorName, final String moduleName) {</span>
+<span class="fc" id="L27">        this.serviceLocatorName = serviceLocatorName;</span>
+<span class="fc" id="L28">        this.moduleName = moduleName;</span>
+<span class="fc" id="L29">    }</span>
+
+    /**
+     * Getter for service interface name
+     * @return service interface name
+     */
+    public String getServiceLocatorName() {
+<span class="fc" id="L36">        return serviceLocatorName;</span>
+    }
+
+    /**
+     * Getter for module name
+     * @return module name
+     */
+    public String getModuleName() {
+<span class="fc" id="L44">        return moduleName;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
