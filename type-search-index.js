@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"de.gematik.ti.fdv.epa.service.localization.spi","l":"IServiceLocalizer"},{"p":"de.gematik.ti.fdv.epa.service.localization.api","l":"LookupStatus"},{"p":"de.gematik.ti.fdv.epa.service.localization.api","l":"ServiceInterfaceName"}]
